@@ -1,0 +1,25 @@
+@use './colors';
+
+.main {
+  height: 100dvh;
+  &::after{
+    content: '';
+    height: 50px;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    background: #000;
+    left: 50%;
+  }
+}
+.section {
+  background: var(--page-weak);
+  height: 100dvh;
+
+  
+}
+.section2 {
+
+  background: blue;
+  height: 100dvh;
+}

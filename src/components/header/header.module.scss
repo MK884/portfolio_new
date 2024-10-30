@@ -1,0 +1,38 @@
+@use '../../styles/colors';
+
+nav {
+    height: 6rem;
+    width: 100%;
+    z-index: 50;
+    padding: 1rem;
+    position: fixed;
+    .main{
+        overflow: hidden;
+        height: 100%;
+        background: var(--nav);
+        // justify-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 50rem;
+        backdrop-filter: blur(16px );
+        -webkit-backdrop-filter: blur(16px );
+        border: 1px solid var(--nav);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 1.6rem;
+        .title{
+            font-weight: 800;
+            color: var(--text-default);
+            font-size: 1.2rem;
+        }
+        .swicth{
+           display: flex;
+           align-items: center;
+           gap: 6px;
+        }
+    }
+}

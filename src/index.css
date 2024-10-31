@@ -76,3 +76,7 @@ button:focus-visible {
   color: var(--text-default);
 
 }
+
+::-webkit-scrollbar{
+  width: 0;
+}

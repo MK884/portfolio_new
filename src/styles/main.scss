@@ -3,7 +3,7 @@
 .main {
   height: 100dvh;
   background: var(--page-weak);
-
+  overflow-x: hidden;
   // &::after{
   //   content: '';
   //   height: 80rem;

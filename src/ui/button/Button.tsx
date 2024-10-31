@@ -2,7 +2,6 @@ import style from "./button.module.scss";
 
 const Button = ({
   label,
-  styles = {},
   Icon,
   IconStyle = {},
   disabled = false,
@@ -12,7 +11,6 @@ const Button = ({
     <button
       disabled={disabled}
       type={"button"}
-      style={styles}
       className={style.button}
       {...props}
     >

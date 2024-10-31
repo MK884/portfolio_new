@@ -1,0 +1,57 @@
+.carousel {
+  background-color: transparent;
+  width: 100dvw;
+  padding: 0 4rem;
+  display: flex;
+  isolation: isolate;
+  position: relative;
+  gap: 1rem;
+  &:hover {
+    .slider {
+      animation-play-state: paused;
+    }
+  }
+  .slider {
+    display: flex;
+    gap: 1rem;
+    animation: 50s slider infinite linear;
+  }
+}
+
+.carousel::before,
+.carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 20%;
+  z-index: 2;
+}
+
+.carousel::after {
+  background: linear-gradient(
+    to left,
+    var(--page-weak) 40%,
+    rgba(255, 255, 255, 0)
+  );
+  right: 0;
+}
+
+.carousel::before {
+  left: 0;
+
+  background: linear-gradient(
+    to right,
+    var(--page-weak) 40%,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+@keyframes slider {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

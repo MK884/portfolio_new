@@ -1,23 +1,21 @@
 @use "../../styles//colors";
 
 $maxWidth: 24rem;
-$maxHeight:12rem;
+$maxHeight: 12rem;
 
 .card {
   background-color: var(--background-defualt);
   border-radius: 1rem;
   display: flex;
-  width: $maxWidth;
+  min-width: $maxWidth;
+  height: 18rem;
   flex-direction: column;
   cursor: pointer;
   overflow: hidden;
+  transition: 500ms;
+  position: relative;
+  z-index: 0;
   border: 1px solid var(--background-defualt);
-  z-index: 1;
-  &:hover {
-    border: 1px solid var(--text-primary);
-    background-color: var(--background-surface-layer-01);
-    z-index: 9;
-  }
   .thumbnail {
     height: $maxHeight;
     width: 100%;
@@ -34,6 +32,7 @@ $maxHeight:12rem;
     flex-direction: column;
     .title {
       p {
+        text-transform: capitalize;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -58,5 +57,18 @@ $maxHeight:12rem;
         }
       }
     }
+    .action {
+      gap: 10px;
+      transition: 100ms;
+      display: flex;
+    }
+  }
+
+  &:is(:hover, :focus) {
+    scale: 1.08;
+    border: 1px solid var(--text-primary);
+    background-color: var(--background-surface-layer-01);
+    z-index: 1;
+    height: auto;
   }
 }

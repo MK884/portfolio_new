@@ -17,7 +17,6 @@ interface AvatarGrpProps {
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   label?: string;
   fullWidth?: boolean;
-  styles?: React.CSSProperties;
   Icon?: IconType;
   IconStyle?: React.CSSProperties;
   disabled?: boolean;
@@ -26,4 +25,12 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 interface ISkillCard {
   text?: string;
   src?: string;
+}
+
+interface IProjectCard {
+  title: string;
+  thumbnail?: string;
+  techStacks: Array<AvatarProps>;
+  demoLink?: string;
+  codeLink?: string;
 }

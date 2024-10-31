@@ -3,7 +3,7 @@
 button {
   all: unset;
   padding: 10px 20px;
-  border: 1px solid var(--border-primary);
+  border: 1px solid var(--border-strong);
   background-color: var(--button-primary);
   cursor: pointer;
   display: flex;
@@ -18,5 +18,7 @@ button {
     scale: 0.9;
     border: 1.5px solid #646cff;
   }
+  &:hover {
+    border-color: #646cff;
+  }
 }
-

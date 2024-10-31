@@ -5,8 +5,6 @@ import { useTheme } from "@/context";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
 
-
-
 function Header() {
   const { theme } = useTheme();
 
@@ -17,9 +15,15 @@ function Header() {
       <div className={styles.main}>
         <div className={styles.title}>Hello!</div>
         <div className={styles.swicth}>
-          <MdOutlineLightMode size={20} color={isDark ? "#bababa" : 'var(--text-primary)'} />
+          <MdOutlineLightMode
+            size={20}
+            color={isDark ? "#bababa" : "var(--text-primary)"}
+          />
           <Switch />
-          <MdOutlineDarkMode size={20} color={isDark ?'var(--text-primary)' : "#bababa"} />
+          <MdOutlineDarkMode
+            size={20}
+            color={isDark ? "var(--text-primary)" : "#bababa"}
+          />
         </div>
       </div>
     </nav>

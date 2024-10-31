@@ -1,0 +1,22 @@
+@use "../../styles/colors";
+
+button {
+  all: unset;
+  padding: 10px 20px;
+  border: 1px solid var(--border-primary);
+  background-color: var(--button-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: scale 0.3s;
+  border-radius: 8px;
+  align-items: center;
+  font-size: 1.5rem;
+  &:active {
+    scale: 0.9;
+    border: 1.5px solid #646cff;
+  }
+}
+

@@ -1,0 +1,62 @@
+@use "../../styles//colors";
+
+$maxWidth: 24rem;
+$maxHeight:12rem;
+
+.card {
+  background-color: var(--background-defualt);
+  border-radius: 1rem;
+  display: flex;
+  width: $maxWidth;
+  flex-direction: column;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid var(--background-defualt);
+  z-index: 1;
+  &:hover {
+    border: 1px solid var(--text-primary);
+    background-color: var(--background-surface-layer-01);
+    z-index: 9;
+  }
+  .thumbnail {
+    height: $maxHeight;
+    width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .body {
+    padding: 0.8rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    .title {
+      p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+    }
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .demo {
+        a {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          p {
+            color: var(--text-primary);
+          }
+          text-decoration: none;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}

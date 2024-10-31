@@ -1,0 +1,27 @@
+@use "../../styles/colors";
+
+.card {
+  background-color: var(--background-defualt);
+  padding: 1.5rem 8rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 10px;
+  &:hover {
+    border: 1px solid var(--text-primary);
+    background-color: var(--background-surface-layer-01);
+  }
+  img {
+    height: 4rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  p {
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}

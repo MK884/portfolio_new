@@ -1,0 +1,62 @@
+@use "../../styles/colors";
+
+$avatar-size-sm: 32px;
+$avatar-size-md: 42px;
+$avatar-size-lg: 62px;
+
+.avatar {
+  &-sm {
+    height: $avatar-size-sm;
+  }
+  &-md {
+    height: $avatar-size-md;
+  }
+  &-lg {
+    height: $avatar-size-lg;
+  }
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  overflow: hidden;
+  color: #dadada;
+  cursor: pointer;
+  background-color: var(--background-defualt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &:hover {
+    border: 1px solid var(--border-strong-hover);
+  }
+}
+
+.avatar-grp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  *:not(:first-child) {
+    margin-left: -12px;
+  }
+  .avatar-number {
+    &-sm {
+      height: $avatar-size-sm;
+    }
+    &-md {
+      height: $avatar-size-md;
+    }
+    &-lg {
+      height: $avatar-size-lg;
+    }
+    aspect-ratio: 1;
+    background-color: var(--background-defualt);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    align-items: center;
+  }
+}

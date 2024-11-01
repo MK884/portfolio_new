@@ -24,7 +24,7 @@ function ProjectCard({
         <div className={style.footer}>
           <AvatarGroup avatars={techStacks} styles={{ height: 28 }} />
           <div className={style.demo}>
-            <a href={demoLink}>
+            <a href={demoLink} target="_blank">
               <p>demo</p>
               <RiExternalLinkFill size={18} color="#646cff" />
             </a>

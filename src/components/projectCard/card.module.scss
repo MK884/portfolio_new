@@ -7,7 +7,7 @@ $maxHeight: 12rem;
   background-color: var(--background-defualt);
   border-radius: 1rem;
   display: flex;
-  min-width: $maxWidth;
+  width: $maxWidth;
   height: 18rem;
   flex-direction: column;
   cursor: pointer;

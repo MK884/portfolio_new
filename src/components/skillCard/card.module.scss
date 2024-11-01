@@ -2,26 +2,28 @@
 
 .card {
   background-color: var(--background-defualt);
-  padding: 1.5rem 8rem;
+  padding: 1.6rem 0;
   border-radius: 1rem;
+  width: 18rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   cursor: pointer;
-  gap: 10px;
+  border: 1px solid var(--border-strong);
+  gap: 1.2rem;
   &:hover {
     border: 1px solid var(--text-primary);
     background-color: var(--background-surface-layer-01);
   }
   img {
-    height: 4rem;
-    aspect-ratio: 1;
+    height: 2.6rem;
+    // aspect-ratio: 1;
     object-fit: cover;
   }
   p {
     text-transform: capitalize;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
   }
 }

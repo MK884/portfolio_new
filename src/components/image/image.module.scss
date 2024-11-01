@@ -1,0 +1,23 @@
+.box {
+  height: 25rem;
+  aspect-ratio: 2/3;
+  cursor: pointer;
+  isolation: isolate;
+  z-index: 0;
+  transition: all 1s;
+  img {
+    transition: all 1s;
+    filter: grayscale(1);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  &:hover {
+    z-index: 1;
+    scale: 1.2;
+    img {
+      filter: grayscale(0);
+      object-fit: contain;
+    }
+  }
+}

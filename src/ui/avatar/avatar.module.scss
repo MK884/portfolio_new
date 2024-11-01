@@ -20,7 +20,7 @@ $avatar-size-lg: 62px;
   overflow: hidden;
   color: #dadada;
   cursor: pointer;
-  background-color: var(--background-defualt);
+  background-color: var(--page-weak);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@ $avatar-size-lg: 62px;
   flex-direction: row;
   align-items: center;
   *:not(:first-child) {
-    margin-left: -12px;
+    margin-left: -10px;
   }
   .avatar-number {
     &-sm {

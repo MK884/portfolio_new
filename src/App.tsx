@@ -1,21 +1,6 @@
 import Header from "@/components/header/Header";
 import "@/styles/main.scss";
-import { Hero, Project, Skills } from "@/sections";
-
-const avatars = [
-  {
-    src: "https://cdn.iconscout.com/icon/free/png-512/free-react-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-4-pack-icons-282599.png?f=webp&w=256",
-  },
-  {
-    src: "https://cdn.iconscout.com/icon/free/png-512/free-react-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-4-pack-icons-282599.png?f=webp&w=256",
-  },
-  {
-    src: "https://cdn.iconscout.com/icon/free/png-512/free-react-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-4-pack-icons-282599.png?f=webp&w=256",
-  },
-  {
-    src: "https://cdn.iconscout.com/icon/free/png-512/free-react-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-4-pack-icons-282599.png?f=webp&w=256",
-  },
-];
+import { About, Hero, Project, Skills } from "@/sections";
 
 export default function App() {
   return (
@@ -24,6 +9,8 @@ export default function App() {
       <Hero />
       <Skills />
       <Project />
+      <div style={{ background: 'var(--border-strong)',width:'100%', height: 1, marginBlock:'1rem'}} />
+      <About />
     </div>
   );
 }

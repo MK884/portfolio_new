@@ -40,6 +40,7 @@ const Avatar = ({
       onClick={onClick}
       className={`${style["avatar"]} ${style[`avatar-${size}`]}`}
       style={styles}
+      title={alt}
     >
       {src ? <img src={src} alt={alt} /> : text?.toUpperCase().charAt(0)}
     </div>

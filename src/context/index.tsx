@@ -4,7 +4,7 @@ const ThemeContext = React.createContext<{
   theme: Theme;
   toggleTheme: () => void;
 }>({
-  theme: "light",
+  theme: "dark",
   toggleTheme: () => {},
 });
 
@@ -15,7 +15,7 @@ export const ThemeProvider = ({
 }) => {
   const initializeTheme = (): Theme => {
     const savedTheme = localStorage.getItem("my-theme") as Theme;
-    return savedTheme || "light";
+    return savedTheme || "dark";
   };
 
   const [theme, setTheme] = React.useState<Theme>(initializeTheme);
@@ -24,8 +24,7 @@ export const ThemeProvider = ({
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
     localStorage.setItem("my-theme", newTheme);
-    console.log('call');
-    
+    console.log("call");
   };
 
   React.useEffect(() => {

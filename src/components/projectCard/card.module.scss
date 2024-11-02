@@ -1,6 +1,6 @@
 @use "../../styles//colors";
 
-$maxWidth: 24rem;
+$maxWidth: 20vmax;
 $maxHeight: 12rem;
 
 .card {
@@ -8,6 +8,7 @@ $maxHeight: 12rem;
   border-radius: 1rem;
   display: flex;
   width: $maxWidth;
+  min-width: 20rem;
   height: 18rem;
   flex-direction: column;
   cursor: pointer;
@@ -44,31 +45,51 @@ $maxHeight: 12rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      .demo {
-        a {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          p {
-            color: var(--text-primary);
-          }
-          text-decoration: none;
-          text-transform: capitalize;
-        }
-      }
+      
     }
-    .action {
-      gap: 10px;
-      transition: 100ms;
-      display: flex;
+    
+  }
+  .list {
+    transition:  .2s;
+    transform-origin: bottom right;
+    background: var(--background-defualt);
+    border: 1px solid var(--border-strong);
+    position: absolute;
+    bottom: 40px;
+    transform: translateY(200px);
+    right: 15px;
+    overflow: hidden;
+    border-radius: 8px;
+    .option {
+      a {
+        padding: 0.6rem 1rem;
+        display: flex;
+        text-decoration: none;
+        gap: 10px;
+        justify-content: space-between;
+        font-size: 1rem;
+      }
+      &:hover {
+        background: var(--background-surface-layer-03);
+      }
     }
   }
 
+  .options:hover {
+    .list {
+      transform: translateY(0px);
+    }
+  }
   &:is(:hover, :focus) {
     scale: 1.08;
     border: 1px solid var(--text-primary);
     background-color: var(--background-surface-layer-01);
     z-index: 1;
-    height: auto;
   }
+}
+
+@media (max-width: 768px) {
+  // .card{
+  //   scale: .8;
+  // }
 }

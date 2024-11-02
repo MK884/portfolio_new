@@ -491,3 +491,13 @@ export const miniProjects: Array<IProjectCard> = [
     thumbnail: "typing.png",
   },
 ];
+
+export const khalid = [
+  { src: "khalid/1.png" },
+  { src: "khalid/2.jpeg" },
+  { src: "khalid/3.jpeg" },
+  { src: "khalid/4.jpeg" },
+  { src: "khalid/5.jpeg" },
+  { src: "khalid/6.jpeg" },
+  { src: "khalid/7.jpeg" },
+];

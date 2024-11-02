@@ -28,7 +28,7 @@ function Project() {
         </div>
         <div className={style.types}>
           <h5>Projects</h5>
-          <CarouselContainer speed={15}>
+          <CarouselContainer direction="rtl">
             <>
               {miniProjects?.map((project, index) => (
                 <ProjectCard {...project} key={index} />

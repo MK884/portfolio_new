@@ -18,7 +18,6 @@
   }
   img {
     height: 2.6rem;
-    // aspect-ratio: 1;
     object-fit: cover;
   }
   p {
@@ -26,4 +25,11 @@
     font-size: 1.2rem;
     font-weight: 600;
   }
+}
+
+
+@media (max-width: 768px) {
+    .card{
+      width: 10rem;
+    }
 }

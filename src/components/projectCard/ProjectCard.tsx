@@ -1,8 +1,8 @@
-import React from "react";
-import style from "./card.module.scss";
-import { AvatarGroup, Button } from "@/ui";
-import { RiExternalLinkFill } from "react-icons/ri";
+import { AvatarGroup } from "@/ui";
 import { FaGithub } from "react-icons/fa";
+import { HiOutlineDotsHorizontal } from "react-icons/hi";
+import { RiExternalLinkFill } from "react-icons/ri";
+import style from "./card.module.scss";
 
 function ProjectCard({
   title,
@@ -23,20 +23,23 @@ function ProjectCard({
 
         <div className={style.footer}>
           <AvatarGroup avatars={techStacks} styles={{ height: 28 }} />
-          <div className={style.demo}>
-            <a href={demoLink} target="_blank">
-              <p>demo</p>
-              <RiExternalLinkFill size={18} color="#646cff" />
-            </a>
+          <div className={style.options}>
+            <HiOutlineDotsHorizontal size={22} />
+            <div className={style.list}>
+              <div className={style.option}>
+                <a href={demoLink} target="_blank">
+                  <p>Demo</p>
+                  <RiExternalLinkFill size={16} color="#646cff" />
+                </a>
+              </div>
+              <div className={style.option}>
+                <a href={codeLink} target="_blank">
+                  <p>Github</p>
+                  <FaGithub size={16} color="#646cff" />
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className={style.action}>
-          <Button
-            style={{ width: "100%" }}
-            Icon={FaGithub}
-            label="Github"
-            onClick={() => window.open(codeLink, "_blank")}
-          />
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import Header from "@/components/header/Header";
 import "@/styles/main.scss";
-import { About, Hero, Project, Skills } from "@/sections";
+import { About, Gallery, Hero, Project, Skills } from "@/sections";
 import { Footer } from "./components";
 
 export default function App() {
@@ -8,6 +8,7 @@ export default function App() {
     <div className="main">
       <Header />
       <Hero />
+      <About />
       <Skills />
       <Project />
 
@@ -21,7 +22,7 @@ export default function App() {
         }}
       />
 
-      <About />
+      <Gallery />
       <Footer />
     </div>
   );

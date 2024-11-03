@@ -4,6 +4,7 @@ import { Switch } from "@/components";
 import { useTheme } from "@/context";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
+import { Avatar } from "@/ui";
 
 function Header() {
   const { theme } = useTheme();
@@ -13,7 +14,9 @@ function Header() {
   return (
     <nav style={styles}>
       <div className={styles.main}>
-        <div className={styles.title}>Hello!</div>
+        <div className={styles.title}>
+        <Avatar text="khalid" src="khalid/6.jpeg" alt="khalid merchant" />
+        </div>
         <div className={styles.swicth}>
           <MdOutlineLightMode
             size={20}

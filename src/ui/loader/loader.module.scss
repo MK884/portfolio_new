@@ -1,0 +1,16 @@
+@use "../../styles/colors";
+
+.loader {
+  height: 2rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 5px solid var(--background-surface-layer-03);
+  border-top-color: var(--background-defualt);
+  animation: 1.2s rotate infinite linear;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}

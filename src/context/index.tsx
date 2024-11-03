@@ -4,7 +4,7 @@ const ThemeContext = React.createContext<{
   theme: Theme;
   toggleTheme: () => void;
 }>({
-  theme: "dark",
+  theme: "light",
   toggleTheme: () => {},
 });
 
@@ -15,7 +15,7 @@ export const ThemeProvider = ({
 }) => {
   const initializeTheme = (): Theme => {
     const savedTheme = localStorage.getItem("my-theme") as Theme;
-    return savedTheme || "dark";
+    return savedTheme || "light";
   };
 
   const [theme, setTheme] = React.useState<Theme>(initializeTheme);

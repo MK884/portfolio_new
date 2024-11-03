@@ -5,15 +5,6 @@ $avatar-size-md: 42px;
 $avatar-size-lg: 62px;
 
 .avatar {
-  &-sm {
-    height: $avatar-size-sm;
-  }
-  &-md {
-    height: $avatar-size-md;
-  }
-  &-lg {
-    height: $avatar-size-lg;
-  }
   aspect-ratio: 1;
   border-radius: 50%;
   border: 1px solid var(--border-strong);
@@ -24,6 +15,15 @@ $avatar-size-lg: 62px;
   display: flex;
   align-items: center;
   justify-content: center;
+  &-sm {
+    height: $avatar-size-sm;
+  }
+  &-md {
+    height: $avatar-size-md;
+  }
+  &-lg {
+    height: $avatar-size-lg;
+  }
   img {
     width: 100%;
     height: 100%;
@@ -42,6 +42,13 @@ $avatar-size-lg: 62px;
     margin-left: -10px;
   }
   .avatar-number {
+    aspect-ratio: 1;
+    background-color: var(--background-defualt);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    align-items: center;
     &-sm {
       height: $avatar-size-sm;
     }
@@ -51,12 +58,5 @@ $avatar-size-lg: 62px;
     &-lg {
       height: $avatar-size-lg;
     }
-    aspect-ratio: 1;
-    background-color: var(--background-defualt);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    font-size: medium;
-    align-items: center;
   }
 }

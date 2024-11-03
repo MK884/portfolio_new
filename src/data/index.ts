@@ -501,3 +501,5 @@ export const khalid = [
   { src: "khalid/6.jpeg" },
   { src: "khalid/7.jpeg" },
 ];
+
+export const videoLink = ''

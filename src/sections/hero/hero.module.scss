@@ -5,6 +5,22 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
+  position: relative;
+  &::after {
+    content: "";
+    // height: 90rem;
+    width: 4rem;
+    position: absolute;
+    top: -30rem;
+    filter: blur(100px);
+    left: 20%;
+    z-index: 0;
+    background: var(--text-primary);
+    // background: rgba($color: rgba(0,0,18,.2), $alpha: 0.2);
+    transform: rotate(-50deg);
+    animation: 1.2s animate linear forwards;
+  }
   h1 {
     animation: fade-up 0.3s;
     text-align: center;
@@ -107,5 +123,14 @@
   }
   to {
     --angle: 360deg;
+  }
+}
+
+@keyframes animate {
+  from {
+    height: 0rem;
+  }
+  to {
+    height: 90rem;
   }
 }

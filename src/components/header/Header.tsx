@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./header.module.scss";
 import { Switch } from "@/components";
 import { useTheme } from "@/context";

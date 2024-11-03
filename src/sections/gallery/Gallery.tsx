@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./gallery.module.scss";
 import { CarouselContainer, ImageBox } from "@/components";
 import { khalid } from "@/data";

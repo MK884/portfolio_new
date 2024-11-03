@@ -1,8 +1,8 @@
 import { Button } from "@/ui";
 import { FaChevronRight, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import style from "./hero.module.scss";
-import { FaXTwitter } from "react-icons/fa6";
 
 function Hero() {
   return (

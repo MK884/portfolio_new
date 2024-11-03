@@ -1,9 +1,8 @@
-import styles from "./header.module.scss";
 import { Switch } from "@/components";
 import { useTheme } from "@/context";
-import { MdOutlineDarkMode } from "react-icons/md";
-import { MdOutlineLightMode } from "react-icons/md";
 import { Avatar } from "@/ui";
+import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
+import styles from "./header.module.scss";
 
 function Header() {
   const { theme } = useTheme();

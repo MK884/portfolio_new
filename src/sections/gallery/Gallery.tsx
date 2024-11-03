@@ -1,6 +1,6 @@
-import style from "./gallery.module.scss";
 import { CarouselContainer, ImageBox } from "@/components";
 import { khalid } from "@/data";
+import style from "./gallery.module.scss";
 
 function Gallery() {
   return (

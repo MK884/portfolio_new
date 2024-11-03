@@ -1,7 +1,7 @@
+import { videoLink } from "@/data";
 import { Loader } from "@/ui";
 import { Typewriter } from "react-simple-typewriter";
 import style from "./about.module.scss";
-import { videoLink } from "@/data";
 
 function About() {
   return (

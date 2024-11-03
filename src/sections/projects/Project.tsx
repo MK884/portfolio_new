@@ -1,6 +1,6 @@
-import style from "./projects.module.scss";
 import { CarouselContainer, ProjectCard } from "@/components";
 import { majorProjects, miniProjects, openSourceProjects } from "@/data";
+import style from "./projects.module.scss";
 
 function Project() {
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./image.module.scss";
 
 function ImageBox({ src, alt }: { src: string; alt?: string }) {

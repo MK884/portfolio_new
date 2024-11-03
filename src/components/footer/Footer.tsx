@@ -1,8 +1,7 @@
-import React from "react";
-import style from "./footer.module.scss";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import style from "./footer.module.scss";
 function Footer() {
   return (
     <footer className={style.footer}>

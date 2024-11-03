@@ -1,7 +1,6 @@
-import React from "react";
-import style from "./skills.module.scss";
 import { CarouselContainer, SkillCard } from "@/components";
 import { skills } from "@/data";
+import style from "./skills.module.scss";
 
 function Skills() {
   return (

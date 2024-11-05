@@ -31,19 +31,19 @@ export const techIcons = {
 export const skills: Array<{ src: string; text: string }> = [
   {
     src: techIcons.javascript,
-    text: "javaScript",
+    text: "JavaScript",
   },
   {
     src: techIcons.react,
-    text: "react",
+    text: "React",
   },
   {
     src: techIcons.node,
-    text: "node.js",
+    text: "Node.js",
   },
   {
     src: techIcons.typescript,
-    text: "typeScript",
+    text: "TypeScript",
   },
   {
     src: techIcons.materialUI,
@@ -63,11 +63,11 @@ export const skills: Array<{ src: string; text: string }> = [
   },
   {
     src: techIcons.react_native,
-    text: "react native",
+    text: "React Native",
   },
   {
     src: techIcons.python,
-    text: "python",
+    text: "Python",
   },
   {
     src: techIcons.mysql,
@@ -75,27 +75,27 @@ export const skills: Array<{ src: string; text: string }> = [
   },
   {
     src: techIcons.css,
-    text: "css",
+    text: "CSS",
   },
   {
     src: techIcons.html,
-    text: "html",
+    text: "HTML",
   },
   {
     src: techIcons.scss,
-    text: "scss",
+    text: "SCSS",
   },
   {
     src: techIcons.tailwind,
-    text: "tailwind",
+    text: "tailwind css",
   },
   {
     src: techIcons.express,
-    text: "express.js",
+    text: "Express.js",
   },
   {
     src: techIcons.api,
-    text: "REST Api",
+    text: "REST API",
   },
 ];
 
@@ -502,4 +502,4 @@ export const khalid = [
   { src: "khalid/7.jpeg" },
 ];
 
-export const videoLink = ''
+export const videoLink = "";

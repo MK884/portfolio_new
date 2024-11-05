@@ -1,9 +1,34 @@
-@use './colors';
+@use "./colors";
 
 .main {
   height: 100dvh;
   background: var(--page-weak);
   overflow-x: hidden;
-
 }
 
+[data-title] {
+  position: relative;
+  // display: inline-block;
+}
+
+[data-title]::after {
+  content: attr(data-title);
+  position: absolute;
+  background-color: var(--background-defualt);
+  border: 1px solid var(--border-strong);
+  color: var(--text-default);
+  padding: 5px 8px;
+  bottom: 110%;
+  font-size: small;
+  width: 120px;
+  max-width: max-content;
+  text-align: center;
+  border-radius: 6px;
+  opacity: 0;
+  z-index: 9999999;
+}
+
+[data-title]:hover::after {
+  opacity: 1;
+  transition: opacity 0.5s;
+}

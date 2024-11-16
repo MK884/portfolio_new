@@ -45,12 +45,10 @@ $maxHeight: 12rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      
     }
-    
   }
   .list {
-    transition:  .2s;
+    transition: 0.2s;
     transform-origin: bottom right;
     background: var(--background-defualt);
     border: 1px solid var(--border-strong);
@@ -81,7 +79,9 @@ $maxHeight: 12rem;
     }
   }
   &:is(:hover, :focus) {
-    scale: 1.08;
+    &.scale {
+      scale: 1.08;
+    }
     border: 1px solid var(--text-primary);
     background-color: var(--background-surface-layer-01);
     z-index: 1;

@@ -33,4 +33,5 @@ interface IProjectCard {
   techStacks: Array<AvatarProps>;
   demoLink?: string;
   codeLink?: string;
+  scaleEffect?: boolean;
 }

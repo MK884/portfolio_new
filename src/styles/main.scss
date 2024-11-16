@@ -32,3 +32,14 @@
   opacity: 1;
   transition: opacity 0.5s;
 }
+
+.slick-dots {
+  li button::before {
+    color: var(--border-strong) !important;
+    scale: 1.8;
+  }
+  li.slick-active button::before {
+    color: var(--text-default) !important;
+    scale: 2;
+  }
+}

@@ -300,6 +300,26 @@ export const miniProjects: Array<IProjectCard> = [
         alt: "typescript",
       },
       {
+        src: techIcons.scss,
+        alt: "scss",
+      },
+    ],
+    title: "Refin.dev Landing Page clone",
+    codeLink: "https://github.com/MK884/refine-landing-page",
+    demoLink: "https://refine-landing-page.vercel.app/",
+    thumbnail: "refine.png",
+  },
+  {
+    techStacks: [
+      {
+        src: techIcons.react,
+        alt: "react",
+      },
+      {
+        src: techIcons.typescript,
+        alt: "typescript",
+      },
+      {
         src: techIcons.postgresql,
         alt: "postgresql",
       },

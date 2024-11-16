@@ -1,4 +1,7 @@
-import { CarouselContainer, ProjectCard } from "@/components";
+import {
+  ProjectCard,
+  SlickCarouselContainer
+} from "@/components";
 import { majorProjects, miniProjects, openSourceProjects } from "@/data";
 import style from "./projects.module.scss";
 
@@ -11,29 +14,25 @@ function Project() {
           <h5>Open Source contribution</h5>
           <div className={style.openPorjects}>
             {openSourceProjects?.map((project, index) => (
-              <ProjectCard {...project} key={index} />
+              <ProjectCard {...project} key={index} scaleEffect />
             ))}
           </div>
         </div>
         <div className={style.types}>
           <h5>Full stack Projects</h5>
-          <CarouselContainer>
-            <>
-              {majorProjects?.map((project, index) => (
-                <ProjectCard {...project} key={index} />
-              ))}
-            </>
-          </CarouselContainer>
+          <SlickCarouselContainer>
+            {majorProjects?.map((project, index) => (
+              <ProjectCard {...project} key={index} />
+            ))}
+          </SlickCarouselContainer>
         </div>
         <div className={style.types}>
           <h5>Projects</h5>
-          <CarouselContainer direction="rtl">
-            <>
-              {miniProjects?.map((project, index) => (
-                <ProjectCard {...project} key={index} />
-              ))}
-            </>
-          </CarouselContainer>
+          <SlickCarouselContainer settings={{ rtl:true }}>
+            {miniProjects?.map((project, index) => (
+              <ProjectCard {...project} key={index} />
+            ))}
+          </SlickCarouselContainer>
         </div>
       </div>
     </section>

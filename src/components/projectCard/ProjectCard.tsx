@@ -10,9 +10,10 @@ function ProjectCard({
   demoLink = "#",
   techStacks,
   thumbnail,
+  scaleEffect = false,
 }: IProjectCard) {
   return (
-    <div className={style.card}>
+    <div className={`${style.card} ${scaleEffect ? style.scale : ""}`}>
       <div className={style.thumbnail}>
         <img src={thumbnail} alt="thumbnail" />
       </div>

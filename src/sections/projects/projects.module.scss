@@ -25,6 +25,8 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      width: 80%;
+      margin-inline: auto;
       margin-bottom: 4rem;
       .openPorjects {
         padding-inline: 3rem;
@@ -41,6 +43,10 @@
     .wrapper {
       .openPorjects {
         justify-content: center;
+      }
+      .types {
+        margin: 0;
+        width: 100%;
       }
     }
   }

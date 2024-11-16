@@ -1,4 +1,6 @@
-import CarouselContainer from "./carousel/CarouselContainer";
+import CarouselContainer, {
+  SlickCarouselContainer,
+} from "./carousel/CarouselContainer";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
 import ImageBox from "./imageBox/ImageBox";
@@ -14,4 +16,5 @@ export {
   CarouselContainer,
   ImageBox,
   Footer,
+  SlickCarouselContainer,
 };

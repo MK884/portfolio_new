@@ -1,4 +1,4 @@
-import React, { Ref } from "react";
+import React from "react";
 import Slider from "react-slick";
 import type { Settings } from "react-slick";
 import style from "./carousel.module.scss";

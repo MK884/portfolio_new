@@ -14,13 +14,14 @@ export const techIcons = {
   mysql:
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
   tooljet: "tooljet.png",
-  scss: "https://static-00.iconduck.com/assets.00/file-type-scss-icon-862x1024-9tvk5qar.png",
+  scss: "scss.svg",
   tailwind: "https://avatars.githubusercontent.com/u/67109815?s=280&v=4",
   css: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
   html: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png",
   express: "https://img.icons8.com/nolan/512/express-js.png",
   android: "android.png",
   api: "https://cdn-icons-png.flaticon.com/512/1493/1493169.png",
+  nextjs: "next-js.svg",
   materialUI: "materialui.svg",
   cpp: "cpp.png",
   git: "git-original.svg",
@@ -32,6 +33,10 @@ export const skills: Array<{ src: string; text: string }> = [
   {
     src: techIcons.javascript,
     text: "JavaScript",
+  },
+  {
+    src: techIcons.nextjs,
+    text: "NextJs",
   },
   {
     src: techIcons.react,
@@ -229,6 +234,30 @@ export const majorProjects: Array<IProjectCard> = [
     codeLink: "https://github.com/MK884/wallpie",
     demoLink: "https://wallpie.vercel.app/",
     thumbnail: "wallpie.png",
+  },
+  {
+    techStacks: [
+      {
+        src: techIcons.react,
+        alt: "react",
+      },
+      {
+        src: techIcons.nextjs,
+        alt: "Nextjs",
+      },
+      {
+        src: techIcons.tailwind,
+        alt: "tailwind",
+      },
+      {
+        src: techIcons.typescript,
+        alt: "typescript",
+      },
+    ],
+    title: "Promptopia - AI Powred prompts",
+    codeLink: "https://github.com/MK884/promts",
+    demoLink: "https://promtopia-drab.vercel.app",
+    thumbnail: "promptopia.png",
   },
   {
     techStacks: [

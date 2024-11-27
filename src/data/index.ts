@@ -541,6 +541,44 @@ export const miniProjects: Array<IProjectCard> = [
   },
 ];
 
+export const certificates: Array<IProjectCard> = [
+  {
+    title: "Cursera Project Network Azure",
+    demoLink:
+      "https://drive.google.com/file/d/1CPqs1rr-B9bwHSFRbJ73RoZ_HjKaBTv1/view?usp=sharing",
+    thumbnail: "certificates/cursera_project_nextwork_azure.png",
+  },
+  {
+    title: "Google Cloud Gen AI",
+    demoLink:
+      "https://drive.google.com/file/d/1kOSAR_jKmcZk66ueJO8ak5_NJT1fPW-B/view?usp=sharing",
+    thumbnail: "certificates/google_cloud_gen_ai_gdsc.png",
+  },
+  {
+    title: "JavaScript Events",
+    demoLink:
+      "https://drive.google.com/file/d/1Oal0_ZGMR4MFyHgMelJY97D5rDOSrM7H/view?usp=sharing",
+    thumbnail: "certificates/javascript_linkedin.png",
+  },
+  {
+    title: "MERN Stack",
+    demoLink:
+      "https://drive.google.com/file/d/1MHJgMjhwVXN97y9gbIA1lT9S3QIsJRyU/view?usp=sharing",
+    thumbnail: "certificates/mern_stack_wih_project_udemy.png",
+  },
+  {
+    title: "NodeJs Scaler",
+    demoLink:
+      "https://drive.google.com/file/d/1e-yWf5Sf7Ja1O6zQoFJS-cTwROdY2P71/view?usp=sharing",
+    thumbnail: "certificates/nodejs_topics_scaler.png",
+  },
+  {
+    title: "Tweet Emotion Recognition with TensorFlow",
+    demoLink: "https://guess-words-game.vercel.app/",
+    thumbnail: "certificates/cursera_project_nextwork.png",
+  },
+];
+
 export const khalid = [
   { src: "khalid/1.png" },
   { src: "khalid/2.jpeg" },

@@ -45,6 +45,9 @@ $maxHeight: 12rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      .options{
+        align-self: end;
+      }
     }
   }
   .list {

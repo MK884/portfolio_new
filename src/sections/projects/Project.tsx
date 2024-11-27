@@ -2,8 +2,11 @@ import {
   ProjectCard,
   SlickCarouselContainer
 } from "@/components";
-import { majorProjects, miniProjects, openSourceProjects } from "@/data";
+import { certificates, majorProjects, miniProjects, openSourceProjects } from "@/data";
 import style from "./projects.module.scss";
+
+console.log(certificates);
+
 
 function Project() {
   return (
@@ -30,6 +33,14 @@ function Project() {
           <h5>Projects</h5>
           <SlickCarouselContainer settings={{ rtl:true }}>
             {miniProjects?.map((project, index) => (
+              <ProjectCard {...project} key={index} />
+            ))}
+          </SlickCarouselContainer>
+        </div>
+        <div className={style.types}>
+          <h5>Certificates</h5>
+          <SlickCarouselContainer>
+            {certificates?.map((project, index) => (
               <ProjectCard {...project} key={index} />
             ))}
           </SlickCarouselContainer>

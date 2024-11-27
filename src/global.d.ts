@@ -30,7 +30,7 @@ interface ISkillCard {
 interface IProjectCard {
   title: string;
   thumbnail?: string;
-  techStacks: Array<AvatarProps>;
+  techStacks?: Array<AvatarProps>;
   demoLink?: string;
   codeLink?: string;
   scaleEffect?: boolean;

@@ -23,22 +23,28 @@ function ProjectCard({
         </div>
 
         <div className={style.footer}>
-          <AvatarGroup avatars={techStacks} styles={{ height: 28 }} />
-          <div className={style.options}>
+          {techStacks ? (
+            <AvatarGroup avatars={techStacks} styles={{ height: 28 }} />
+          ): <div></div>}
+          <div className={style.options} >
             <HiOutlineDotsHorizontal size={22} />
             <div className={style.list}>
-              <div className={style.option}>
-                <a href={demoLink} target="_blank">
-                  <p>Demo</p>
-                  <RiExternalLinkFill size={16} color="#646cff" />
-                </a>
-              </div>
-              <div className={style.option}>
-                <a href={codeLink} target="_blank">
-                  <p>Github</p>
-                  <FaGithub size={16} color="#646cff" />
-                </a>
-              </div>
+              {demoLink && (
+                <div className={style.option}>
+                  <a href={demoLink} target="_blank">
+                    <p>Demo</p>
+                    <RiExternalLinkFill size={16} color="#646cff" />
+                  </a>
+                </div>
+              )}
+              {codeLink && (
+                <div className={style.option}>
+                  <a href={codeLink} target="_blank">
+                    <p>Github</p>
+                    <FaGithub size={16} color="#646cff" />
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         </div>

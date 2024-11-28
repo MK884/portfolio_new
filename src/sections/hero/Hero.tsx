@@ -1,3 +1,4 @@
+import { links } from "@/data";
 import { Button } from "@/ui";
 import { FaChevronRight, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -10,16 +11,16 @@ function Hero() {
       <h1>Merchnat khalid</h1>
       <h2>Full Stck Developer</h2>
       <div className={style.icons}>
-        <a href="https://github.com/MK884" target="_blank">
+        <a href={links?.github} target="_blank">
           <FaGithub size={24} cursor="pointer" />
         </a>
-        <a href="https://www.linkedin.com/in/merchant-khalid/" target="_blank">
+        <a href={links?.linkedin} target="_blank">
           <FaLinkedin size={24} cursor="pointer" />
         </a>
-        <a href="mailto:marchantkhalid7810@gmail.com" target="_blank">
+        <a href={`mailto:${links?.email}`} target="_blank">
           <MdEmail size={24} cursor="pointer" />
         </a>
-        <a href="https://x.com/KhalidMarchant" target="_blank">
+        <a href={links?.twitter} target="_blank">
           <FaXTwitter size={24} cursor="pointer" />
         </a>
       </div>
@@ -27,12 +28,7 @@ function Hero() {
         <Button
           label="Resume"
           Icon={FaChevronRight}
-          onClick={() =>
-            window.open(
-              "https://drive.google.com/file/d/1pYiassgU-dzdOWV1IFjtlcxcC2yCeE1I/view?usp=sharing",
-              "_blank"
-            )
-          }
+          onClick={() => window.open(links?.resume, "_blank")}
         />
       </div>
     </section>

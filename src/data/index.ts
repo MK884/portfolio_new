@@ -589,4 +589,13 @@ export const khalid = [
   { src: "khalid/7.jpeg" },
 ];
 
+export const links = {
+  github: "https://github.com/MK884",
+  linkedin: "https://www.linkedin.com/in/merchant-khalid/",
+  twitter: "https://x.com/KhalidMarchant",
+  email: "marchantkhalid7810@gmail.com",
+  resume:
+    "https://drive.google.com/file/d/11q4kTe31WcnWiSTdN4kV2wHWoRVJKdKi/view?usp=sharing",
+};
+
 export const videoLink = "";

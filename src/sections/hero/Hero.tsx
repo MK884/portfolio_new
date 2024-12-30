@@ -9,7 +9,7 @@ function Hero() {
   return (
     <section className={style.section}>
       <h1>Merchnat khalid</h1>
-      <h2>Full Stck Developer</h2>
+      <h2>Frontend Developer</h2>
       <div className={style.icons}>
         <a href={links?.github} target="_blank">
           <FaGithub size={24} cursor="pointer" />

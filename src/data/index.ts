@@ -595,7 +595,7 @@ export const links = {
   twitter: "https://x.com/KhalidMarchant",
   email: "marchantkhalid7810@gmail.com",
   resume:
-    "https://drive.google.com/file/d/11q4kTe31WcnWiSTdN4kV2wHWoRVJKdKi/view?usp=sharing",
+    "https://drive.google.com/file/d/1-p3YTdhqgxqZVVzJhKBEBVhGAfDyWVH1/view?usp=sharing",
 };
 
 export const videoLink = "";

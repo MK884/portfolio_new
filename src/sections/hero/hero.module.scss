@@ -15,7 +15,7 @@
     top: -30rem;
     filter: blur(100px);
     left: 20%;
-    z-index: 0;
+    z-index: -1;
     background: var(--text-primary);
     // background: rgba($color: rgba(0,0,18,.2), $alpha: 0.2);
     transform: rotate(-50deg);

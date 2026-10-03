@@ -1,13 +1,12 @@
-import React from "react";
 import { Header } from "./layout/Header";
-import { Hero } from "./sections/Hero";
 import { About } from "./sections/About";
-import Work from "./sections/Work";
-import Experience from "./sections/Experience";
-import OpenSource from "./sections/OpenSource";
 import Certificates from "./sections/Certificates";
 import Contact from "./sections/Contact";
+import Experience from "./sections/Experience";
+import { Hero } from "./sections/Hero";
+import OpenSource from "./sections/OpenSource";
 import Skills from "./sections/Skills";
+import Work from "./sections/Work";
 
 export default function App() {
   return (
@@ -27,7 +26,7 @@ export default function App() {
 
         <Certificates />
 
-       <Contact />
+        <Contact />
       </main>
     </>
   );

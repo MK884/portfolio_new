@@ -1,5 +1,5 @@
+import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Menu, X, Sun, Moon } from "lucide-react";
 
 interface NavItem {
   label: string;

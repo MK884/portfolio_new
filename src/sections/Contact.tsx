@@ -54,7 +54,7 @@ export default function Contact() {
     const form = event.currentTarget;
     const formData = new FormData(form);
 
-    formData.append("access_key", import.meta.env.VITE_WEB3FORMS_KEY);
+    formData.append("access_key", import.meta.env.WEB3FORMS_KEY);
     formData.append(
       "subject",
       `Portfolio inquiry: ${formData.get("projectType")}`,

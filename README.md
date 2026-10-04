@@ -1,75 +1,118 @@
-# React + TypeScript + Vite
+# Khalid Merchant — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website showcasing my work, experience, skills, open-source contributions, certifications, and contact information.
 
-Currently, two official plugins are available:
+🌐 **Live:** https://khalid-merchant.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This portfolio is built to present my experience as a Frontend / React Native Developer and highlight the products and applications I've worked on.
 
-## Expanding the ESLint configuration
+The website focuses on:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Clean and minimal UI
+- Responsive design
+- Smooth animations and interactions
+- Project showcase
+- Work experience timeline
+- Interactive skills section
+- Open-source contributions
+- Certifications
+- Contact form
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Frontend
 
-```
+- React
+- TypeScript
+- Tailwind CSS
+- Vite
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+### UI & Animation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Motion
+- Lucide React
+- React Icons
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Deployment
 
-```
+- Vercel
+
+### Other
+
+- REST APIs
+- Git
+- GitHub
+
+---
+
+## 🚀 Features
+
+### Hero
+
+- Personal introduction
+- Current availability status
+- Resume access
+- Responsive layout
+- Animated profile presentation
+
+### About
+
+- Professional introduction
+- Career statistics
+
+### Work
+
+Interactive project carousel featuring:
+
+- Project overview
+- Project screenshots / banners
+- Technology stack
+- Project links
+- Project-specific metadata
+
+### Experience
+
+- Alternating desktop timeline
+- Responsive mobile timeline
+- Current-role indicator
+- Company information
+- Responsibilities
+- Technologies used
+- Scroll animations
+
+### Skills
+
+Interactive and dynamic skills explorer with:
+
+- Category filtering
+- Skill search
+- Skill count
+- Brand-colored icons
+- Hover animations
+- Skill details
+- Proficiency indicators
+
+### Open Source
+
+Showcases contributions to open-source projects, organized by organization with links to individual pull requests.
+
+### Certificates
+
+- Responsive certificate carousel
+- Certificate previews
+- Certificate links
+- Auto-sliding interaction
+
+### Contact
+
+- Contact form
+- Email information
+- Social links
+- Resume access
+- Responsive layout
